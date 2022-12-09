@@ -93,12 +93,16 @@ int main(){
     scanf("%i",&x);
     for(int i = 0; i < x; i++){
       printf("Entrou for\n");
-      strcat(w1.v,w.v); // bombeamento de v
+      strcat(w.v,w.v); // bombeamento de v, concatenação de strings
     }
 
-    printf("Mostrando v apos o bombeamento: %s",w.v);
-  }
+    strcat(word,w.u); //
+    strcat(word,w.v); // palavra resultante
+    strcat(word,w.z); //
 
+    printf("Mostrando v apos o bombeamento: %s",word);
+  }
 
   return 0;
 }
+
